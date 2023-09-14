@@ -1,0 +1,35 @@
+extends  ./layouts/index.pug
+
+block slider
+    .slider 
+        h1 Rio de Janeiro 
+        em Adventure
+
+block content
+    main.container.mt-5 
+        h2.text-center.mb-5 About Us
+        .row.mb-5
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ante non mauris maximus mollis et sed nisl. Vivamus eget turpis at augue porta pellentesque vitae sit amet massa. Phasellus ornare luctus auctor. Praesent fermentum tortor non dapibus iaculis. Nam pretium cursus sapien, nec pulvinar sapien egestas eget. Cras vitae ante ac arcu dignissim auctor. Nunc non velit eu libero lobortis pulvinar. Mauris in facilisis metus. 
+
+                p Mauris hendrerit dignissim eros vitae pulvinar. Maecenas pellentesque nisi vitae enim porta luctus. Nulla nec justo interdum, pharetra nulla eget, euismod velit. Donec feugiat, purus eu euismod commodo, dui arcu dictum mi, non bibendum erat quam nec est. Vivamus ut fermentum nisi. Maecenas magna nunc, euismod sit amet nulla eu, facilisis aliquet neque. Nullam a lacinia purus. Vivamus at rutrum lorem, ac iaculis lectus. 
+
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="", class="img-fluid")
+            
+            include ./layouts/blockTravels
+
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido
+                        h3 -5% Offer 
+                        p.titulo Travel to Canada 
+                        p.fecha 20 August - 30 de September
+                        p.precio $1000 USD
+
+    .container 
+        h2.mt-5.text-center Comments
+
+        include ./layouts/blockComments
